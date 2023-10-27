@@ -1,0 +1,305 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.clearFix{
+    clear: both;
+}
+a{
+    text-decoration: none ;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238 245 255);
+}
+.parent{
+background-color: white;
+border: none;
+border-radius: 10px;
+padding: 10px;
+margin-top: 30px;
+width: 75%;
+}
+.parent-left{
+    
+     float:left;
+     margin-right: 60px;
+     position: relative;
+}
+.parent-right{
+     
+    height: 100%;
+    width: 90%;
+     
+    margin-top: 50px;
+ 
+}
+.parent-right h2{
+    color: rgb(1 46 103);
+
+}
+.parent-right p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #aaa;
+}
+
+
+.input-info{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+}
+.input-info label{
+   color: rgb(1 46 103);
+    margin: 10px 0;
+}
+.input-info input{
+     width: 100%;
+     padding: 8px 5px;
+     border: none;
+    outline: 1px solid rgb(1 46 103);
+     border-radius: 8px;
+     margin: 10px 0;
+}
+.btns-groub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    padding: 10px 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+ 
+.btn2{
+    background-color: rgb(1 46 103);
+
+}
+button.btn1 a{
+    color: #aaa;
+}
+button.btn2 a{
+    color: white;
+}
+ul{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    list-style-type: none;
+}
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+ul li>a>span{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: white;
+    
+}
+.active{
+    color: rgb(1 46 103);
+    background-color: rgb(238 245 255);
+}
+ul li a div.list-item-info span{
+color: #ddd;
+}
+ul li a div.list-item-info p{
+    color: white;
+    /* font-size: 20px; */
+}
+
+/*  */
+.billing-category{
+    display: flex;
+    align-items: center;
+ 
+}
+div.parent-right .billing-category .item img{
+     width: 50px;
+   
+} 
+div.parent-right .billing-category .item{
+    border: 1px solid rgb(1 46 103);
+    background-color: rgb(238 245 255);
+    z-index: 999;
+    width: 32%;
+     padding: 15px ;
+     border-radius: 15px;
+     height: 180px;
+     display: flex;
+     flex-flow: column;
+    justify-content: space-between;
+   
+} 
+div.parent-right .billing-category .item:not(:last-of-type){
+    margin-right: 2% ;
+} 
+div.parent-right .billing-category .item h4{
+    color: rgb(1 46 103);
+} 
+ 
+div.parent-right .billing-category .item span{
+    color: #888;
+} 
+.month-year{
+    height: 80px;
+    background-color: rgb(238 245 255);
+    float: left;
+    width: 62%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.month-year span.outer{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(1 46 103);
+    border: none;
+    border-radius: 50vh;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    padding: 0px ;
+
+}
+.month-year > span.outer > .inner{
+ width: 18px;
+ height: 18px;
+ background-color: white;
+ border-radius: 50%;
+}
+
+/* Styling step 3  */
+.card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding:5px 10px ;
+    border: 2px solid rgb(1 46 103);
+    border-radius: 20px;
+}
+.card:not(:last-of-type){
+    margin-bottom: 8px;
+    background-color: rgb(238 245 255);
+}
+.card:not(:last-of-type) img{
+  background-color: rgb(1 46 103);
+  padding: 5px;
+  border-radius: 5px;
+  width: 5%;
+}
+.card .card-info{
+   width: 80%;
+ }
+.card .card-info h2{
+     margin: 0;
+     padding-top: 20px;
+  }
+ .card input{
+     width: 25px;
+     height: 25px;
+     border-radius: 5px;
+     transition: all .4s ease-in-out;
+  }
+
+  .card span{
+    color: hsl(265, 80%, 81%);
+    position: relative;
+ }
+ /* start step 4 styling */
+ .all-items{
+    position: relative;
+ }
+.finishing-card{
+    background-color: #eee;
+    padding-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+     float: left;
+}
+.finishing-card hr{ 
+    width: 400px;
+    margin: 0px auto 10px ;
+    
+}
+.finishing-card-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 10px;
+}
+.un-flex{
+    display: flex;
+    flex-flow: column;
+}
+.finishing-card-two{
+    font-size: 12px;
+   width: 100%;
+    /* background-color: blue; */
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .finishing-card-total{
+ /* background-color: red; */
+ width: 500px;
+ margin: 10px auto;
+ float: left;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ }
+ .finishing-card-total span{
+     font-weight: bold;
+     font-size: 20px;
+     color: rgb(244, 10, 236);
+    }
+
+/* thanks Styling */
+.parent-right-thanks {
+    /* background-color: yellow; */
+    width: 65%;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    height: 87vh;
+}
+
+.thanks-contact{
+    /* background-color: red; */
+    font-size: 20px;
+    text-align: center;
+    margin: 150px 0;
+ 
+}
+.thanks-contact h1{
+     margin: 20px 0;
+     color: rgb(1 46 103);
+ 
+}
+.thanks-contact p{
+    line-height: 1.8;
+    color: #aaa;
+}
